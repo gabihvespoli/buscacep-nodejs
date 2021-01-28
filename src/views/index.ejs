@@ -15,9 +15,13 @@
     <div class="card rounded-3 bg-dark text-white text-center d-flex align-items-center justify-content-center">
       <div class="card-body">
         <h2 class="card-title text-warning">Buscador de CEP</h2>
-        <div class="form-group">
+        <div class="form-group d-flex align-items-center justify-content-center">
           <form class="row" action="/enviacep" method="POST">
             <div class="col-auto">
+              <label for="phone"></label>
+              <input class="form-control p-3" type="text" name="phone" id="phone"
+                title="Digite seu celular se quiser&#013;receber o resultado por SMS &#013;ou deixe o campo vazio."
+                placeholder="Envie por SMS">
               <label for="cep"></label>
               <input class="form-control p-3" type="text" name="cep" id="cep" placeholder="CEP - apenas números">
               <input type="submit" class="btn btn-warning btn-lg mb-3 mt-4" value="Buscar" />
