@@ -13,22 +13,24 @@
 <body class="bg-secondary">
   <div class="container col-sm-4 position-absolute top-50 start-50 translate-middle">
     <div class="card rounded-3 bg-ligth text-center d-flex align-items-center justify-content-center">
+
       <div class="card-body">
-        <h2 class="card-title mb-4">Resultado CEP</h2>
+        <h2 class="card-title mb-4">Resultado GitHub</h2>
         <hr class="my-4">
-        <h5 class="lead"><b class="text-primary">Logradouro: </b><br />
-          <%= dado.logradouro %>
+          <img style="width: 150px; border-radius: 50%;" src="<%= dado.avatar_url %>" alt="Avatar"><br /><br />
+        <h5 class="lead"><b class="text-primary">Nome: </b><br />
+          <%= dado.name %>
+        </h5><br />
+        <h5 class="lead"><b class="text-primary">Bio: </b><br />
+          <%= dado.bio %>
         </h5><br />
         <h5 class="lead"><b class="text-primary">Localidade: </b><br />
-          <%= dado.localidade %>
-        </h5><br />
-        <h5 class="lead"><b class="text-primary">Bairro: </b><br />
-          <%= dado.bairro %>
-        </h5><br />
+          <%= dado.location %>
+        </h5>
       </div>
     </div>
     <div class="d-grid gap-2">
-      <a href="/" class="btn btn-dark btn-lg text-warning p-3 mt-4">Voltar para o menu</a>
+      <a href="/" class="btn btn-dark btn-lg text-warning p-3 mt-3">Voltar para o menu</a>
     </div>
   </div>
 </body>

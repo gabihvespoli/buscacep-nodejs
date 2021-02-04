@@ -14,17 +14,27 @@
   <div class="container col-sm-4 position-absolute top-50 start-50 translate-middle">
     <div class="card rounded-3 bg-dark text-white text-center d-flex align-items-center justify-content-center">
       <div class="card-body">
-        <h2 class="card-title text-warning">Buscador de CEP</h2>
+        <h2 class="card-title text-warning">Busca CEP</h2>
         <div class="form-group d-flex align-items-center justify-content-center">
           <form class="row" action="/enviacep" method="POST">
             <div class="col-auto">
-              <label for="phone"></label>
-              <input class="form-control p-3" type="text" name="phone" id="phone"
-                title="Digite seu celular se quiser&#013;receber o resultado por SMS &#013;ou deixe o campo vazio."
-                placeholder="Envie por SMS">
               <label for="cep"></label>
               <input class="form-control p-3" type="text" name="cep" id="cep" placeholder="CEP - apenas números">
               <input type="submit" class="btn btn-warning btn-lg mb-3 mt-4" value="Buscar" />
+            </div>
+          </form>
+        </div>
+        <hr class="bg-light mt-5">
+      </div>
+
+      <div class="card-body">
+        <h2 class="card-title text-success">Busca GitHub</h2>
+        <div class="form-group d-flex align-items-center justify-content-center">
+          <form class="row" action="/enviagit" method="POST">
+            <div class="col-auto">
+              <label for="login"></label>
+              <input class="form-control p-3" type="text" name="login" id="login" placeholder="Digite usuário">
+              <input type="submit" class="btn btn-success btn-lg mb-3 mt-4" value="Buscar" />
             </div>
           </form>
         </div>
